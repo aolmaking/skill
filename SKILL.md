@@ -1,3 +1,11 @@
+---
+
+name: Enterprise UX & Workflow Auditor
+description: Reverse engineer, analyze, audit, and optimize enterprise software systems through workflow analysis, information architecture mapping, feature discovery, and UX bottleneck detection.
+version: 1.0.0
+author: Ahmed
+-------------
+
 # Enterprise UX & Workflow Auditor
 
 ## Purpose
@@ -20,11 +28,9 @@ The goal is to fully understand:
 
 before proposing improvements.
 
----
-
 ## Core Responsibilities
 
-### 1. System Discovery
+### System Discovery
 
 Inspect and document:
 
@@ -34,85 +40,53 @@ Inspect and document:
 * Dashboards
 * Forms
 * Tables
+* Reports
 * Filters
 * Search interfaces
-* Reports
+* Navigation structures
 * Modals
-* Wizards
-* Navigation menus
-* Settings areas
+* Settings panels
 
 Create a complete inventory.
 
----
+### Feature Extraction
 
-### 2. Feature Extraction
+For every screen identify:
 
-For every screen:
-
-Identify:
-
-* Available actions
+* Actions
 * Inputs
 * Outputs
 * Business purpose
 * Dependencies
-* Connected workflows
+* Related workflows
 
-Generate a feature catalog.
+Generate a complete feature catalog.
 
----
+### Business Capability Mapping
 
-### 3. Business Capability Mapping
+Infer logical business domains.
 
-Infer business domains and responsibilities.
+Map every feature to its domain.
 
-Examples:
-
-* Inventory
-* Sales
-* Procurement
-* Maintenance
-* Operations
-* Reporting
-* Finance
-* Human Resources
-
-Map every feature to its business domain.
-
----
-
-### 4. User Workflow Analysis
-
-Identify:
-
-* Primary workflows
-* Secondary workflows
-* Administrative workflows
-* Exceptional workflows
-
-For each workflow:
+### Workflow Analysis
 
 Document:
 
-* Starting point
+* Entry points
 * User actions
-* Required screens
 * Decision points
 * End states
+* Dependencies
 
----
-
-### 5. Navigation Analysis
+### Navigation Analysis
 
 Analyze:
 
-* Menu structure
 * Navigation depth
 * Context switching
+* Redundant transitions
 * Dead ends
-* Circular navigation
-* Redundant navigation paths
+* Circular paths
 
 Measure:
 
@@ -120,69 +94,48 @@ Measure:
 * Screen transitions
 * Workflow length
 
----
-
-### 6. Duplication Detection
+### Duplication Detection
 
 Identify:
 
 * Duplicate pages
 * Duplicate workflows
-* Duplicate forms
 * Duplicate reports
-* Overlapping functionality
+* Duplicate forms
+* Overlapping features
 
-Estimate consolidation opportunities.
+### Graph Construction
 
----
+Represent the application as:
 
-### 7. Graph Construction
-
-Represent the application as a directed graph.
+* Navigation Graph
+* Workflow Graph
+* Dependency Graph
 
 Nodes:
 
 * Pages
 * Features
 * Actions
-* Workflows
 
 Edges:
 
-* Navigation paths
+* Navigation
 * Dependencies
-* User transitions
+* Workflow transitions
 
-Generate:
-
-* Navigation graph
-* Workflow graph
-* Dependency graph
-
----
-
-### 8. User Journey Simulation
+### User Journey Simulation
 
 Generate realistic user scenarios.
 
-Simulate:
-
-* Frequent tasks
-* Administrative tasks
-* Reporting tasks
-* Maintenance tasks
-* Power-user workflows
-
 Measure:
 
-* Steps required
+* Required steps
 * Click count
-* Context switches
 * Navigation complexity
+* Context switches
 
----
-
-### 9. UX Bottleneck Detection
+### UX Bottleneck Detection
 
 Identify:
 
@@ -192,31 +145,20 @@ Identify:
 * Information overload
 * Repeated user effort
 
-Rank issues by impact.
+Rank issues by severity.
 
----
+### Information Architecture Optimization
 
-### 10. Information Architecture Optimization
-
-After analysis is complete:
-
-Propose:
-
-* Feature consolidation
-* Navigation simplification
-* Workflow simplification
-* Information architecture redesign
+Only after complete analysis.
 
 Goals:
 
-* Minimize user effort
-* Minimize navigation depth
-* Minimize workflow complexity
-* Preserve business capabilities
+* Reduce complexity
+* Reduce navigation depth
+* Reduce workflow friction
+* Preserve business functionality
 
----
-
-## Expected Deliverables
+## Deliverables
 
 1. System Inventory
 2. Feature Inventory
@@ -229,29 +171,4 @@ Goals:
 9. User Journey Analysis
 10. Information Architecture Proposal
 11. Workflow Optimization Proposal
-12. Prioritized Improvement Roadmap
-
----
-
-## Working Principles
-
-Never assume.
-
-Always verify through observation.
-
-Prioritize understanding before redesign.
-
-Preserve business functionality.
-
-Optimize for usability, discoverability, efficiency, and maintainability.
-
-Think as:
-
-* UX Architect
-* Information Architect
-* Product Analyst
-* Business Analyst
-* Systems Analyst
-* Software Architect
-
-at the same time.
+12. Improvement Roadmap
